@@ -1,8 +1,10 @@
+import ThemeToggle from "./ThemeToggle";
+
 const Navbar = () => {
     return (
-        <nav className='fixed top-0 left-0 w-full bg-white shadow-md z-50'>
+        <nav className='fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50 border-b border-gray-200'>
             <div className='max-w-6xl mx-auto px-4 py-3 flex justify-center items-center'>
-                <ul className='flex space-x-16 text-gray-700 font-medium'>
+                <ul className='flex space-x-16 text-gray-800 font-medium'>
                     <li>
                         <a href='#hero' className='hover:text-blue-600'>
                             Hero
@@ -19,6 +21,7 @@ const Navbar = () => {
                         </a>
                     </li>
                 </ul>
+                <ThemeToggle />
             </div>
         </nav>
     );

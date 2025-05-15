@@ -5,3 +5,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  font-family: 'ui-sans-serif', 'system-ui', sans-serif;
+  color: #1f2937; /* Tailwind's gray-800 */
+  background-color: #f9fafb; /* Tailwind's gray-50 */
+}
