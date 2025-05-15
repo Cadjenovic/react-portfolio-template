@@ -2,12 +2,12 @@ const Contact = () => {
     return (
         <section
             id='contact'
-            className='border-t border-gray-200 py-16 px-4 bg-blue-50'
+            className='border-t border-gray-200 dark:border-gray-700 py-16 px-4 bg-blue-50 dark:bg-gray-800 text-gray-800 dark:text-gray-200'
         >
-            <h2 className='text-3xl font-bold text-center text-gray-800 mb-12'>
+            <h2 className='text-3xl font-bold text-center text-gray-800 mb-12 dark:text-gray-200'>
                 Contact
             </h2>
-            <p className='text-center text-gray-600 mt-6'>
+            <p className='text-center text-gray-600 dark:text-gray-200 mt-6'>
                 Email:{" "}
                 <a
                     href='mailto:your@email.com'

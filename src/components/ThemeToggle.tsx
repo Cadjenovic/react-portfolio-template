@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 
 const ThemeToggle = () => {
     const [darkMode, setDarkMode] = useState(() => {
-        return localStorage.getItem("theme") === "dark";
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme !== null) return savedTheme === "dark";
+        return true;
     });
 
     useEffect(() => {
@@ -17,12 +19,25 @@ const ThemeToggle = () => {
     }, [darkMode]);
 
     return (
-        <button
-            onClick={() => setDarkMode(!darkMode)}
-            className='ml-4 px-3 py-1 text-sm rounded border border-gray-400 dark:border-gray-300 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition'
-        >
-            {darkMode ? "☀️ Light" : "🌙 Dark"}
-        </button>
+        <label className='flex items-center cursor-pointer ml-auto'>
+            <div className='relative'>
+                <input
+                    type='checkbox'
+                    checked={darkMode}
+                    onChange={() => setDarkMode(!darkMode)}
+                    className='sr-only'
+                />
+                <div className='w-10 h-5 bg-gray-300 dark:bg-gray-600 rounded-full shadow-inner transition' />
+                <div
+                    className={`dot absolute left-0 top-0 w-5 h-5 bg-white rounded-full shadow-md transition transform ${
+                        darkMode ? "translate-x-full" : ""
+                    }`}
+                />
+            </div>
+            <span className='ml-3 text-sm text-gray-600 dark:text-gray-300'>
+                {darkMode ? "Dark" : "Light"}
+            </span>
+        </label>
     );
 };
 
