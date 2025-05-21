@@ -14,11 +14,8 @@ A clean and responsive personal portfolio website built with React and Tailwind 
 - Tailwind CSS
 - React Router (optional)
 
-## Live Demo
-[Coming Soon or link here]
+## Link
+[link here]
 
 ## Screenshot
 ![screenshot](./screenshot.png)
-
-## License
-MIT
