@@ -14,6 +14,13 @@ const projects = [
         description: "A place to explore deities of the Ancient Greece.",
         link: "https://greek-mythology.netlify.app",
         image: greekMythologyImage
+    },
+    {
+        title: "Ethereum Transaction Explorer",
+        description:
+            "Tool that allows you to take a closer look at specific transactions, debug stack trace and visualize gas usage.",
+        link: "https://greek-mythology.netlify.app",
+        image: greekMythologyImage
     }
 ];
 

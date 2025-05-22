@@ -21,7 +21,7 @@ const Hero = () => {
                     <span className='text-indigo-400 dark:text-indigo-300'>
                         Software Engineer
                     </span>{" "}
-                    • TypeScript Specialist
+                    • TypeScript & React
                 </p>
                 <a
                     href='#projects'
