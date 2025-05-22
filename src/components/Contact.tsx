@@ -15,6 +15,13 @@ const Contact = () => {
                 >
                     lukacadjenovic24@gmail.com
                 </a>
+                Github:{" "}
+                <a
+                    href='https://github.com/Cadjenovic'
+                    className='text-blue-600 hover:underline'
+                >
+                    Cadjenovic
+                </a>
             </p>
         </section>
     );

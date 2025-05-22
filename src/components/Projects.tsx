@@ -1,5 +1,6 @@
 import portfolioImage from "../assets/portfolio.png";
 import greekMythologyImage from "../assets/greek-mythology.png";
+import ethTxExplorerImage from "../assets/eth-tx-explorer.png";
 
 const projects = [
     {
@@ -20,7 +21,7 @@ const projects = [
         description:
             "Tool that allows you to take a closer look at specific transactions, debug stack trace and visualize gas usage.",
         link: "https://greek-mythology.netlify.app",
-        image: greekMythologyImage
+        image: ethTxExplorerImage
     }
 ];
 
